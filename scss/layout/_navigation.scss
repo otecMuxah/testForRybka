@@ -1,0 +1,35 @@
+.navigation {
+    &__list {
+        display: flex;
+        width: 806px;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $color-black;
+        font: 16px/16px $font-bold;
+        text-transform: uppercase;
+
+    }
+    &__item {
+        position: relative;
+    }
+    &__hamburger,
+    &__hamburger svg {
+        width: 16px;
+        height: 13px;
+        fill: $color-orange;
+    }
+    &__arrow,
+    &__arrow svg {
+        width: 11px;
+        height: 7px;
+        fill: $color-orange;
+        transform: rotate(180deg);
+    }
+    &__hamburger {
+        margin-right: 12px;
+    }
+    &__arrow {
+        margin-left: 5px;
+    }
+}

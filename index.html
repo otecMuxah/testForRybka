@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body class="loaded">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="search-icon" viewBox="0 0 17.08 17.08">
+        <title>search</title><path d="M10.69,12.78a6.39,6.39,0,1,1,6.39-6.39,6.39,6.39,0,0,1-6.39,6.39Zm0-10.65A4.26,4.26,0,1,0,15,6.39a4.27,4.27,0,0,0-4.26-4.26Zm-8.52,15L0,14.91l4.2-4.2a17.58,17.58,0,0,0,2.17,2.17l-4.2,4.2Z"/>
+    </symbol>
+    <symbol id="hamburger-icon" viewBox="0 0 17.04 10.65">
+        <title>hamburger</title><path d="M16,2.13H5.32A1.07,1.07,0,0,1,5.32,0H16a1.07,1.07,0,0,1,0,2.13Zm-14.91,0A1.07,1.07,0,1,1,2.13,1.07,1.06,1.06,0,0,1,1.07,2.13ZM16,6.39H5.32a1.07,1.07,0,0,1,0-2.13H16a1.07,1.07,0,1,1,0,2.13Zm-14.91,0A1.07,1.07,0,1,1,2.13,5.33,1.06,1.06,0,0,1,1.07,6.39ZM16,10.65H5.32a1.06,1.06,0,0,1,0-2.13H16a1.06,1.06,0,1,1,0,2.13Zm-14.91,0A1.06,1.06,0,1,1,2.13,9.59a1.06,1.06,0,0,1-1.06,1.07Z"/>
+    </symbol>
+    <symbol id="arrow-icon" viewBox="0 0 15.82 9.18">
+        <path xmlns="http://www.w3.org/2000/svg" class="cls-1" d="M.4,6.69,6.7.62h0L6.94.38a1.42,1.42,0,0,1,1.94,0l.24.24h0l6.29,6.07a1.29,1.29,0,0,1,0,1.87l-.24.23a1.4,1.4,0,0,1-1.94,0L7.91,3.65,2.58,8.79a1.4,1.4,0,0,1-1.94,0L.4,8.56a1.28,1.28,0,0,1,0-1.87Z"/>
+    </symbol>
+</svg>
+
+<!-- BEGIN BODY -->
+
+<!--<div class="main-wrapper">-->
+    <header class="header">
+        <div class="header__width-holder">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.png" alt="BlagoyArt">
+                    <span class="header__logo-text">Интернет-магазин «Благой арт»</span>
+                </a>
+                <form action="POST" class="header__search-form">
+                    <input type="text" placeholder="Введите название или артикул" class="header__search">
+                    <button type="submit" class="header__search-button">
+                        <svg class="header__search-icon">
+                            <use xlink:href="#search-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="header__contact">
+                    <a href="tel:+7(800)7078139" class="header__phone">+7 (800) 707-81-39</a>
+                    <div class="header__work-time-holder">
+                        <div class="header__work-time">ПН-ПТ с 9:00 до 18:00</div>
+                        <div class="header__delivery">Доставка по РФ и СНГ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapper">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <span class="navigation__hamburger">
+                                <svg>
+                                    <use xlink:href="#hamburger-icon"></use>
+                                </svg>
+                            </span>
+                            <a href="" class="navigation__link">КАТАЛОГ ТОВАРОВ</a>
+                            <span class="navigation__arrow">
+                                <svg>
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </span>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Свадебная бижутерия</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Аксессуары для волос</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Броши</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Мужские аксессуары</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Клатчи</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Детская бижутерия</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Демонстрационное оборудование</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="" class="navigation__link">УСЛОВИЯ РАБОТЫ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">СКИДКИ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">ДОКУМЕНТЫ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <div class="user-status">
+                    <div class="user-status__cart">
+                        <span class="user-status__quantity">10</span>
+                        <span class="user-status__text">Товаров / </span>
+                        <span class="user-status__summ">56 789 P</span>
+                    </div>
+                    <div class="user-status__login-status">Войти</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--</div>-->
+
+<div class="icon-load"></div>
+
+<!-- BODY EOF   -->
+
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+<!--
+<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+<script type="text/javascript" src="js/components/slick.js" ></script>
+<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+-->
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

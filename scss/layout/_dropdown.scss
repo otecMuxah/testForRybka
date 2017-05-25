@@ -1,0 +1,35 @@
+.dropdown {
+    &__list {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        border: 1px solid rgb(221, 223, 223);
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1.5px 2.598px 1px 0 rgba(108, 104, 104, 0.33);
+        width: 242px;
+        padding: 20px 32px;
+    }
+    &__link {
+        font: 15px $font;
+        color: $color-grey-3;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: -15px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            border: 2px solid $color-orange;
+        }
+    }
+    &__item {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

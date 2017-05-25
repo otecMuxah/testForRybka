@@ -1,0 +1,52 @@
+.header {
+	&__width-holder {
+		max-width: 1244px;
+		margin: 0 auto;
+
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 35px 16px 16px;
+		border-bottom: 1px solid #dddfdf;
+		&:last-child {
+			padding: 20px 16px;
+		}
+	}
+	&__logo {
+
+	}
+	&__logo-text {
+		font: 14px/14px $font;
+		color: $color-grey;
+		display: block;
+	}
+	&__search-form {
+		position: relative;
+		height: 38px;
+	}
+	&__search {
+		border: 1px $color-grey-2 solid;
+		border-radius: 4px;
+		width: 494px;
+		height: 38px;
+		padding: 14px 9px;
+	}
+	&__search-icon {
+		width: 18px;
+		height: 18px;
+		fill: $color-orange;
+	}
+	&__search-button {
+		width: 18px;
+		height: 18px;
+		padding: 0;
+		box-sizing: border-box;
+		background: none;
+		border: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
