@@ -32,4 +32,11 @@
             margin-bottom: 0;
         }
     }
+    &__arrow,
+    &__arrow svg {
+        width: 11px;
+        height: 7px;
+        fill: $color-orange;
+        transform: rotate(90deg);
+    }
 }
