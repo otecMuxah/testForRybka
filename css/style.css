@@ -690,7 +690,7 @@ h3 {
       position: absolute;
       width: 23px;
       height: 23px;
-      background: url("../img/cart.png") no-repeat;
+      background: url("../img/sprite.png") no-repeat -3px -304px;
       top: 0;
       left: -33px; }
   .user-status__quantity {
@@ -801,7 +801,11 @@ h3 {
           transform: rotate(180deg) translateY(50%); }
 
 .nav-mobile {
-  padding: 0; }
+  padding: 0;
+  display: none; }
+  @media screen and (max-width: 730px) {
+    .nav-mobile {
+      display: block; } }
   .nav-mobile__wrapper {
     height: 40px;
     width: 100%; }

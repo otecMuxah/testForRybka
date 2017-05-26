@@ -1,5 +1,9 @@
 .nav-mobile {
     padding: 0;
+    display: none;
+    @include phone {
+        display: block;
+    }
     &__wrapper {
         height: 40px;
         width: 100%;
