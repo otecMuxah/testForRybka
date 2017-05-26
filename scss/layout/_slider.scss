@@ -26,6 +26,9 @@
             font-size: 23px;
             left: 7%;
         }
+        @include phone {
+            font-size: 15px;
+        }
     }
     .slick-prev,
     .slick-next {
@@ -46,6 +49,11 @@
             height: 98px;
             width: 20px;
             background-position: 25% 50%;
+        }
+        @include phone {
+            width: 20px;
+            height: 30px;
+            background-size: 10px 15px;
         }
 
     }

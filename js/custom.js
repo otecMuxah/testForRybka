@@ -7,6 +7,9 @@ $(window).load(function(){
 	$('body').removeClass('loaded');
 
 	$('.slider__list').slick();
+	$('.nav-mobile__item--mainNav').on('click', function () {
+		$(this).toggleClass('nav-mobile__item--active');
+    })
 });
 /* viewport width */
 function viewport(){

@@ -4,7 +4,7 @@
 		max-width: 1244px;
 		margin: 0 auto;
 		@include phone {
-			display: flex;
+
 		}
 	}
 	&__wrapper {
@@ -12,8 +12,14 @@
 		justify-content: space-between;
 		padding: 35px 16px 14px;
 		border-bottom: 1px solid #dddfdf;
+		@include phone {
+			border: 0;
+		}
 		&:last-child {
 			padding: 18px 16px 15px;
+			@include phone {
+				display: none;
+			}
 		}
 	}
 	&__logo {
@@ -38,6 +44,9 @@
 		@include width-1150 {
 			width: 220px;
 
+		}
+		@include phone {
+			display: none;
 		}
 	}
 	&__search {
@@ -85,6 +94,9 @@
 				justify-content: flex-end;
 
 			}
+		}
+		@include phone {
+			display: none;
 		}
 	}
 	&__phone {

@@ -1,4 +1,8 @@
 .navigation {
+
+    .nav-mobile__item & {
+        display: none;
+    }
     &__list {
         display: flex;
         width: 809px;
