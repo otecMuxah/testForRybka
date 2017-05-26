@@ -318,6 +318,13 @@ h3 {
   box-shadow: 1.5px 2.598px 1px 0 rgba(108, 104, 104, 0.33);
   width: 242px;
   padding: 20px 32px; }
+  .dropdown__list--2ndLevel {
+    top: 0;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0); }
 
 .dropdown__link {
   font: 15px PTSans, Arial, sans-serif;
@@ -334,6 +341,15 @@ h3 {
     border: 2px solid #cb944c; }
 
 .dropdown__item {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative; }
   .dropdown__item:last-child {
     margin-bottom: 0; }
+
+.dropdown__arrow,
+.dropdown__arrow svg {
+  width: 11px;
+  height: 7px;
+  fill: #cb944c;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
