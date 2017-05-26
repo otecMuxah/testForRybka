@@ -1,0 +1,61 @@
+.user-status {
+    display: flex;
+    @include width-1150 {
+        display: none;
+    }
+    &__cart {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: -4px;
+        letter-spacing: 0.6px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            background: url("../img/cart.png") no-repeat;
+            top: 0;
+            left: -33px;
+        }
+    }
+    &__quantity {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: $color-orange;
+        font: 14px $font-bold;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 7px;
+    }
+    &__text,
+    &__summ,
+    &__status,
+    &__login-status {
+        font: 15px $font-bold;
+        color: $color-dark-blue;
+        text-transform: uppercase;
+        @include width-1150 {
+            font-size: 10px;
+        }
+    }
+    &__login-status {
+        position: relative;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: -4px;
+        svg {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 17px;
+            height: 19px;
+            fill: $color-orange;
+        }
+    }
+}

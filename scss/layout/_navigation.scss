@@ -1,17 +1,25 @@
 .navigation {
     &__list {
         display: flex;
-        width: 806px;
+        width: 809px;
         justify-content: space-between;
+        @include width-1150 {
+            width: 705px;
+        }
     }
     &__link {
         color: $color-black;
         font: 16px/16px $font-bold;
         text-transform: uppercase;
-
+        @include width-1150 {
+            font-size: 13px;
+        }
     }
     &__item {
         position: relative;
+        &:hover .dropdown__list--1stLevel {
+            display: block;
+        }
     }
     &__hamburger,
     &__hamburger svg {
@@ -27,7 +35,7 @@
         transform: rotate(180deg);
     }
     &__hamburger {
-        margin-right: 12px;
+        margin-right: 6px;
     }
     &__arrow {
         margin-left: 5px;

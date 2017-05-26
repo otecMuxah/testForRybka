@@ -2,7 +2,8 @@
 @import "base/_fonts";
 //@import "components/_jquery.formstyler";
 //@import "components/_fancybox";
-//@import "components/_slick";
+@import "components/_slick";
+@import "components/_slick-theme";
 //@import "components/_mCustomScrollbar";
 @import "layout/_header";
 @import "layout/_footer";
@@ -10,4 +11,6 @@
 @import "layout/_media";
 @import "layout/_navigation";
 @import "layout/_dropdown";
+@import "layout/_user-status";
+@import "layout/_slider";
 

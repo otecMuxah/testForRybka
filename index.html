@@ -18,6 +18,9 @@
     <symbol id="arrow-icon" viewBox="0 0 15.82 9.18">
         <path xmlns="http://www.w3.org/2000/svg" class="cls-1" d="M.4,6.69,6.7.62h0L6.94.38a1.42,1.42,0,0,1,1.94,0l.24.24h0l6.29,6.07a1.29,1.29,0,0,1,0,1.87l-.24.23a1.4,1.4,0,0,1-1.94,0L7.91,3.65,2.58,8.79a1.4,1.4,0,0,1-1.94,0L.4,8.56a1.28,1.28,0,0,1,0-1.87Z"/>
     </symbol>
+    <symbol id="person-icon" viewBox="0 0 17.61 15.58">
+        <path xmlns="http://www.w3.org/2000/svg" class="cls-1" d="M13.75,15.58a3.86,3.86,0,1,1,3.85-3.86,3.86,3.86,0,0,1-3.85,3.86Zm.55-4.41M11.17,6.61A4.48,4.48,0,0,1,10,8.41l0,.15a5,5,0,0,0,.61,6.94L0,15.54s-.08-2.19.4-2.65,1-1.29,3.52-1.66,2.61-1.72,2.7-1.68c0-.51-.06-1.22-.06-1.22A3.39,3.39,0,0,1,5.17,6.65c-.82-.33-.71-.54-.79-1,0,0,.09-1.73.65-1.69,0,0,.45,0,.36-.4a6.52,6.52,0,0,1,0-1.24c0-.44.23-1.63,1.16-1.8s.21-.09.52-.13S6.9.19,7.47.19L8.39,0C9,0,9.33.8,9.64.84s.11-.14.74,0c.93.17.66,1.44.7,1.87a2.46,2.46,0,0,1,0,1c-.09.4.67.35.67.35.66,0,.38,1.69.38,1.69-.1.45-.34.5-1,.89Z"/>
+    </symbol>
 </svg>
 
 <!-- BEGIN BODY -->
@@ -25,9 +28,57 @@
 <!--<div class="main-wrapper">-->
     <header class="header">
         <div class="header__width-holder">
+            <div class="header__wrapper nav-mobile">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <span class="navigation__hamburger">
+                                <svg>
+                                    <use xlink:href="#hamburger-icon"></use>
+                                </svg>
+                            </span>
+                            <a href="" class="navigation__link">КАТАЛОГ ТОВАРОВ</a>
+                            <span class="navigation__arrow">
+                                <svg>
+                                    <use xlink:href="#arrow-icon"></use>
+                                </svg>
+                            </span>
+                            <ul class="dropdown__list dropdown__list--1stLevel">
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Свадебная бижутерия</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Аксессуары для волос</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Броши</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Мужские аксессуары</a>
+                                    <span class="navigation__arrow dropdown__arrow">
+                                        <svg>
+                                            <use xlink:href="#arrow-icon"></use>
+                                        </svg>
+                                    </span>
+                                    <ul class="dropdown__list dropdown__list--2ndLevel">
+                                        <li class="dropdown__item"><span href="" class="dropdown__link dropdown__link--header">Мужская бижутерия</span></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Аксессуары для волос</a></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Броши</a></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Мужские аксессуары</a></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Клатчи</a></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Детская бижутерия</a></li>
+                                        <li class="dropdown__item"><a href="" class="dropdown__link">Демонстрационное оборудование</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Клатчи</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Детская бижутерия</a></li>
+                                <li class="dropdown__item"><a href="" class="dropdown__link">Демонстрационное оборудование</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="" class="navigation__link">УСЛОВИЯ РАБОТЫ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">СКИДКИ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">ДОКУМЕНТЫ</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header__wrapper">
                 <a href="/" class="header__logo">
-                    <img src="img/logo.png" alt="BlagoyArt">
+                    <img src="img/logo.png" alt="BlagoyArt" class="header__logo-image">
                     <span class="header__logo-text">Интернет-магазин «Благой арт»</span>
                 </a>
                 <form action="POST" class="header__search-form">
@@ -43,6 +94,18 @@
                     <div class="header__work-time-holder">
                         <div class="header__work-time">ПН-ПТ с 9:00 до 18:00</div>
                         <div class="header__delivery">Доставка по РФ и СНГ</div>
+                    </div>
+                    <div class="user-status">
+                        <a href="#" class="user-status__cart">
+                            <span class="user-status__quantity">10</span>
+                            <span class="user-status__text">Товаров / </span>
+                            <span class="user-status__summ">56 789 P</span>
+                        </a>
+                        <a href="#" class="user-status__login-status">Войти
+                            <svg>
+                                <use xlink:href="#person-icon"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -61,7 +124,7 @@
                                     <use xlink:href="#arrow-icon"></use>
                                 </svg>
                             </span>
-                            <ul class="dropdown__list">
+                            <ul class="dropdown__list dropdown__list--1stLevel">
                                 <li class="dropdown__item"><a href="" class="dropdown__link">Свадебная бижутерия</a></li>
                                 <li class="dropdown__item"><a href="" class="dropdown__link">Аксессуары для волос</a></li>
                                 <li class="dropdown__item"><a href="" class="dropdown__link">Броши</a></li>
@@ -72,7 +135,7 @@
                                         </svg>
                                     </span>
                                     <ul class="dropdown__list dropdown__list--2ndLevel">
-                                        <li class="dropdown__item"><a href="" class="dropdown__link">Свадебная бижутерия</a></li>
+                                        <li class="dropdown__item"><span href="" class="dropdown__link dropdown__link--header">Мужская бижутерия</span></li>
                                         <li class="dropdown__item"><a href="" class="dropdown__link">Аксессуары для волос</a></li>
                                         <li class="dropdown__item"><a href="" class="dropdown__link">Броши</a></li>
                                         <li class="dropdown__item"><a href="" class="dropdown__link">Мужские аксессуары</a></li>
@@ -94,16 +157,36 @@
                     </ul>
                 </nav>
                 <div class="user-status">
-                    <div class="user-status__cart">
+                    <a href="#" class="user-status__cart">
                         <span class="user-status__quantity">10</span>
                         <span class="user-status__text">Товаров / </span>
                         <span class="user-status__summ">56 789 P</span>
-                    </div>
-                    <div class="user-status__login-status">Войти</div>
+                    </a>
+                    <a href="#" class="user-status__login-status">Войти
+                        <svg>
+                            <use xlink:href="#person-icon"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
+    <section class="slider">
+        <div class="slider__list">
+            <div class="slider__slide">
+                <div class="slider__text">
+                    Новая коллекция<br>
+                    SWAROVSKI уже здесь!
+                </div>
+            </div>
+            <div class="slider__slide">
+                <div class="slider__text">
+                    Новая коллекция<br>
+                    SWAROVSKI уже здесь!
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!--</div>-->
 
@@ -115,10 +198,9 @@
 <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
 <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
-<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+<!--<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>-->
 <script type="text/javascript" src="js/components/slick.js" ></script>
-<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
--->
+<!--<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>-->
 <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

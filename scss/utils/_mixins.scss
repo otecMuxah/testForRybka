@@ -84,3 +84,21 @@
     line-height: $font-h;
     color:$font-c;
 }
+
+@mixin width-1150 {
+	@media screen and (max-width: 1150px) {
+		@content;
+	}
+}
+
+@mixin width-768 {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: 730px) {
+		@content;
+	}
+}

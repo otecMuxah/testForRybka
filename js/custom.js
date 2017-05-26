@@ -4,7 +4,9 @@ $(window).load(function(){
 	} else{
 		$('body').addClass('web');
 	};
-	$('body').removeClass('loaded'); 
+	$('body').removeClass('loaded');
+
+	$('.slider__list').slick();
 });
 /* viewport width */
 function viewport(){

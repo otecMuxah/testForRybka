@@ -1,21 +1,39 @@
 .dropdown {
     &__list {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: -28px;
+        left: -13px;
         transform: translateY(100%);
         border: 1px solid rgb(221, 223, 223);
         border-radius: 3px;
         background-color: rgb(255, 255, 255);
         box-shadow: 1.5px 2.598px 1px 0 rgba(108, 104, 104, 0.33);
         width: 242px;
-        padding: 20px 32px;
+        padding: 20px 30px 25px;
+        display: none;
+        z-index: 11;
+        &:before {
+            content: '';
+            width: 242px;
+            height: 65px;
+            position: absolute;
+            top: -35px;
+            left: 0;
+        }
         &--2ndLevel {
-            top: 0;
+            top: -18px;
             bottom: auto;
             left: auto;
-            right: 0;
+            right: -34px;
             transform: translate(100%, 0);
+            padding: 18px 34px 25px;
+            &:before {
+                content: '';
+                width: 70px;
+                position: absolute;
+                top: 0;
+                left: -60px;
+            }
         }
     }
     &__link {
@@ -26,18 +44,30 @@
             content: '';
             position: absolute;
             top: 6px;
-            left: -15px;
+            left: -17px;
             width: 5px;
             height: 5px;
             border-radius: 50%;
-            border: 2px solid $color-orange;
+            border: 1px solid $color-orange;
+        }
+        &--header {
+            font: 16px $font-bold;
+            text-transform: uppercase;
+            color: $color-orange;
+            margin-left: -10px;
+            &:before {
+                display: none;
+            }
         }
     }
     &__item {
-        margin-bottom: 15px;
+        margin-bottom: 11px;
         position: relative;
         &:last-child {
             margin-bottom: 0;
+        }
+        &:hover .dropdown__list--2ndLevel {
+            display: block;
         }
     }
     &__arrow,
@@ -46,5 +76,9 @@
         height: 7px;
         fill: $color-orange;
         transform: rotate(90deg);
+    }
+    &__arrow {
+        position: relative;
+        right: -40px;
     }
 }
